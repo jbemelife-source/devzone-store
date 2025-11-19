@@ -1,0 +1,87 @@
+:root {
+    --bg: #111315;
+    --green: #14532d;
+    --ash: #cbd5e1;
+    --accent: #ffde59;
+}
+
+body,
+html {
+    background: var(--bg);
+    color: var(--ash);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial;
+}
+
+#adminArea {
+    max-width: 520px;
+    margin: 33px auto 0 auto;
+    background: var(--green);
+    border-radius: 19px;
+    padding: 28px 19px;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+input,
+select,
+textarea {
+    background: var(--bg);
+    color: var(--ash);
+    border-radius: 8px;
+    font-size: 1em;
+    border: none;
+    padding: 7px 12px;
+    margin: 5px 0 12px 0;
+    width: 90%;
+}
+
+button,
+.accent-btn {
+    background: var(--accent);
+    color: var(--green);
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 19px;
+    margin-top: 7px;
+    font-size: 1.01em;
+    transition: .13s;
+}
+
+button:hover,
+.accent-btn:hover {
+    background: var(--ash);
+    color: var(--bg);
+}
+
+table {
+    width: 99%;
+    margin-top: 11px;
+    background: var(--bg);
+    color: var(--ash);
+}
+
+th,
+td {
+    padding: 7px 4px;
+}
+
+tr:nth-child(even) {
+    background: rgba(34, 53, 45, 0.21);
+}
+
+.form-error {
+    color: #e51010;
+    margin-bottom: 10px;
+}
+
+@media (max-width:540px) {
+    #adminArea {
+        padding: 17px 2vw;
+    }
+}

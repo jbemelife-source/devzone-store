@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEMUTEK - Admin</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="admin-container">
+        <div id="adminLogin">
+            <h2>Admin Login</h2>
+            <input id="adminPass" type="password" placeholder="Password" autocomplete="off" />
+            <button onclick="adminLogin()" class="prod-btn wide">Login</button>
+            <div id="adminError" class="form-error"></div>
+        </div>
+        <div id="adminPanel" style="display:none;">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+                <h2 style="margin:0;">Admin Dashboard</h2>
+                <button onclick="logoutAdmin()" class="prod-btn" style="background:#c00;color:#fff;">Logout</button>
+            </div>
+            <nav class="adminnav">
+                <button onclick="showAdminTab('products')" class="prod-btn wide">Products</button>
+                <button onclick="showAdminTab('orders')" class="prod-btn wide">Orders</button>
+            </nav>
+            <section id="admin-products"></section>
+            <section id="admin-orders" style="display:none;"></section>
+        </div>
+    </main>
+    <div id="adminToast"></div>
+    <script src="admin.js"></script>
+</body>
+
+</html>

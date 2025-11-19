@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev-Zone</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand">Dev - Zone Store</div>
+        <div class="nav-actions">
+            <select id="catSelect">
+                <option value="all">All</option>
+                <option value="tech">Tech</option>
+                <option value="clothes">Clothes</option>
+                <option value="accessories">Accessories</option>
+            </select>
+            <button class="cart-btn" id="cartBtn" title="View Cart">🛒 <span id="cartQuantity">0</span></button>
+            <button id="orderBtn" class="order-btn">My Orders</button>
+            <a href="admin.html" class="nav-link">Admin</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2 class="section-title">Explore Top Picks</h2>
+        <div class="product-grid" id="productGrid"></div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close" id="closeCart">&times;</span>
+            <h3>Shopping Cart</h3>
+            <div id="cartItems"></div>
+            <button id="cartOrderBtn" class="prod-btn wide">Order All</button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content" id="prodModalContent"></div>
+    </div>
+
+    <!-- Orders Modal -->
+    <div class="modal" id="ordersModal">
+        <div class="modal-content">
+            <span class="close" id="closeOrders">&times;</span>
+            <h3>My Orders</h3>
+            <div id="pastOrders"></div>
+        </div>
+    </div>
+
+    <footer>
+        <span>Dev-Zone Store &copy; 2025 | Powered by Devzone ind.</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
